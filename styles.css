@@ -1,6 +1,70 @@
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    /* Deixar o plano de fundo mudando aleatoriamente*/
+    background: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjmeuqZcNyE-CqDmqaJzsMLdhyL6W8ddA1bhB__l5dsZ5qWGUvidk_vVBKUlAK5uxcoiKshvUu5iln5-6HFz6m5X7595m4tuLD_h1OfXUgJrwwFY65yXq0IWIwYcUJDT4563DZJyKi918M/s1600/4aad62934fe4e0d41aac94da3b77c6bb.jpg");
+    /* Para a imagem cobrir toda a tela */
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* tamanho mínimo da tela será de 100vh, ela toda */
+}
+
+.container {
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    padding: 10px;
+    font-size: 50px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    transition: opacity 0.5s ease-in-out; /* deixar o hover mais suave */
+}
+
+.buttons {
+    margin: 30px 0;
+    display: flex;
+    gap: 40px;
+}
+
+button:hover {
+    opacity: 0.7;
+}
+
+#rock {
+    background-color: #a200ff;
+}
+
+#paper {
+    background-color: #9ee01a;
+}
+
+#scissors {
+    background-color: #7dbeed;
+} 
+
+p {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.your-score span {
+    color: rgb(77, 128, 216);
+}
+
+.machine-score span {
+    color: rgb(224, 71, 15);
 }
